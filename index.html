@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- CUSTOM STYLE -->
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <header>
+    <h1>Calculadora Simple</h1>
+  </header>
+
+  <main>
+
+    <div class="contenedor">
+      <input id="operando1" type="number">
+
+      <div class="contenedor-botones">
+        <input class="operador" type="button" value="+">
+        <input class="operador" type="button" value="-">
+        <input class="operador" type="button" value="*">
+        <input class="operador" type="button" value="/">
+      </div>
+
+      <input id="operando2" type="number">
+      <p>=</p>
+      <span class="divisor"></span>
+      <input id="resultado" type="text" disabled>
+    </div>
+    <span id="mensaje"></span>
+  </main>
+
+  <footer>
+    <small>UTN - AP 4.0</small>
+  </footer>
+</body>
+<script src="./index.js"></script>
+</html>
